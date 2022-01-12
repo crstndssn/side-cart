@@ -1,0 +1,49 @@
+/*!****************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/postcss-loader/dist/cjs.js!./src/styles.css ***!
+  \****************************************************************************************************************************************/
+
+
+/*!**********************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles.scss ***!
+  \**********************************************************************************************************/
+.side-cart-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.1);
+  will-change: opacity;
+  opacity: 1;
+  visibility: hidden;
+  transition: opacity .3s; }
+
+.side-cart-overlay.active {
+  opacity: 1;
+  visibility: visible; }
+
+.side-cart {
+  block-size: 100%;
+  inline-size: 350px;
+  background-color: #fff; }
+  .side-cart button {
+    width: 100%; }
+
+.side-cart__body {
+  padding: 1rem; }
+  .side-cart__body div {
+    display: flex;
+    justify-content: center;
+    margin: 0 0 1rem 0; }
+
+.side-cart__controls button {
+  color: white;
+  background-color: black;
+  width: 60px;
+  height: 40px;
+  border: none;
+  margin: 1em;
+  border-radius: 42px;
+  cursor: pointer; }
+

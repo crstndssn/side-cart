@@ -1,0 +1,15 @@
+<div class="side-cart__body">
+  {% for item in cart.items %}
+  <article>
+    <img src="{{ item.image | img_url: " 100x" }}" width="auto" height="auto" loading="lazy" />
+    <span>{{ item.title }}</span>
+    <span>{{ item.price | money }}</span>
+    <div class="side-cart__controls">
+      <button class="js-increase-product-quantity" data-variant-id="{{item.variant.id}}">-</button>
+      <p>{{item.quantity}}</p>
+      <button class="js-decrease-product-quantity" data-variant-id="{{item.variant.id}}">+</button>
+      <button class="js-product-remove-button" data-variant-id="{{item.variant.id}}">delete</button>
+    </div>
+  </article>
+  {% endfor %}
+</div>
